@@ -1,0 +1,25 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - python-version: "3.9"
+            lektor: "lektor==3.3.14"
+          - python-version: "3.12"
+            lektor: "lektor==3.3.14"
+          - python-version: "3.12"
+            lektor: "lektor==3.4.0b15"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install "${{ matrix.lektor }}" .
+      - run: python tests/test_plugin.py

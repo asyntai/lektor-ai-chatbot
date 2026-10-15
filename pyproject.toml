@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lektor-ai-chatbot"
+version = "1.0.0"
+description = "Add the Asyntai AI chat assistant to your Lektor site. It answers visitor questions from your own content."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Asyntai", email = "hello@asyntai.com"}]
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["lektor", "lektor-plugin", "chatbot", "ai", "chat", "support", "asyntai"]
+classifiers = [
+    "Framework :: Lektor",
+    "Environment :: Plugins",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Site Management",
+    "Topic :: Communications :: Chat",
+]
+
+[project.urls]
+Homepage = "https://asyntai.com/documentation/integrations/lektor/"
+Documentation = "https://asyntai.com/documentation/integrations/lektor/"
+Source = "https://github.com/asyntai/lektor-ai-chatbot"
+Issues = "https://github.com/asyntai/lektor-ai-chatbot/issues"
+
+[project.entry-points."lektor.plugins"]
+ai-chatbot = "lektor_ai_chatbot:AiChatbotPlugin"
+
+[tool.setuptools]
+py-modules = ["lektor_ai_chatbot"]
