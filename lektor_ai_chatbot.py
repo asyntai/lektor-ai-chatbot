@@ -19,7 +19,7 @@ import click
 from lektor.assets import Asset
 from lektor.pluginsystem import Plugin
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 DEFAULT_SCRIPT_URL = "https://widget.asyntai.com/static/js/chat-widget.js"
 WIDGET_ID_PATTERN = re.compile(r"^asyntai_[A-Za-z0-9]+$")

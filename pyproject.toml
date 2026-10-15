@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lektor-ai-chatbot"
-version = "1.0.0"
+version = "1.0.1"
 description = "Add the Asyntai AI chat assistant to your Lektor site. It answers visitor questions from your own content."
 readme = "README.md"
 license = "MIT"

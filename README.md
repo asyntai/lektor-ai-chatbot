@@ -67,4 +67,4 @@ Email [hello@asyntai.com](mailto:hello@asyntai.com), or read the
 
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/asyntai/lektor-ai-chatbot/blob/main/LICENSE).

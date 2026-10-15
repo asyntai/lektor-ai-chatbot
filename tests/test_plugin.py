@@ -313,7 +313,7 @@ def run():
         )
         check(
             "lektor plugins list shows the plugin",
-            "AI Chatbot by Asyntai (ai-chatbot)" in r.stdout and "version: 1.0.0" in r.stdout,
+            "AI Chatbot by Asyntai (ai-chatbot)" in r.stdout and "version: 1.0.1" in r.stdout,
             r.stdout,
         )
 
